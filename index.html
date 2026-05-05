@@ -948,41 +948,50 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero reveal-up">
-        <div class="hero-content">
-            <h1>Mustajab Ahmed</h1>
-            <p class="hero-subtitle">E-Commerce & Website Developer</p>
-            <p class="hero-description">4+ years building and scaling WooCommerce & Shopify stores. Specialized in automation, performance optimization, and conversion-focused design. Based in UAE.</p>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-number" data-target="4">0</span>
-                    <span class="stat-label">Years Exp.</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="2000">0</span>
-                    <span class="stat-label">Products Managed</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="50+">0</span>
-                    <span class="stat-label">Sites Built</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="100">0</span>
-                    <span class="stat-label">Daily Orders</span>
-                </div>
+    
+<!-- FIXED Hero Section - No Header Overlap -->
+<section id="home" class="hero reveal-up" style="
+    min-height: calc(100vh - 100px); 
+    padding: 110px 5% 80px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+">
+    <div class="hero-content">
+        <h1>Mustajab Ahmed</h1>
+        <p class="hero-subtitle">E-Commerce & Website Developer</p>
+        <p class="hero-description">4+ years building and scaling WooCommerce & Shopify stores. Specialized in automation, performance optimization, and conversion-focused design. Based in UAE.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Years Exp.</span>
             </div>
-
-           <div class="cta-buttons">
-    <a href="#projects" class="btn btn-primary btn-large">
-        <i class="fas fa-briefcase"></i> View My Work
-    </a>
-    <a href="#contact" class="btn btn-secondary btn-large">
-        <i class="fas fa-comments"></i> Get in Touch
-    </a>
-</div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="2000">0</span>
+                <span class="stat-label">Products Managed</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">Sites Built</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="100">0</span>
+                <span class="stat-label">Daily Orders</span>
+            </div>
         </div>
-    </section>
+
+        <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary btn-large">
+                <i class="fas fa-briefcase"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-large">
+                <i class="fas fa-comments"></i> Get in Touch
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -1434,281 +1443,77 @@
 
     </div>
 </section>
-<!-- Academic Section - Compact 3-Column -->
+<!-- Academic Section - Mobile Friendly -->
 <section id="academic" class="section">
-    <h2 class="section-title reveal-up" style="margin-bottom: 3rem;">Academic</h2>
+    <h2 class="section-title reveal-up" style="margin-bottom: 2.5rem;">Academic</h2>
     <div class="education-grid" style="
         display: grid; 
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 1.5rem; 
-        max-width: 1200px; 
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+        gap: 1.8rem; 
+        max-width: 1000px; 
         margin: 0 auto;
     ">
         
-        <!-- Fsc -->
+        <!-- Faculty of Science -->
         <div class="glass-card education-card stagger-item reveal-up" style="
-            padding: 2rem 1.5rem; 
+            padding: 2.2rem 1.8rem; 
             text-align: center; 
-            height: 220px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center;
+            min-height: 200px;
         ">
             <div class="edu-icon" style="
-                width: 50px; height: 50px; 
+                width: 55px; height: 55px; 
                 background: linear-gradient(135deg, var(--primary-purple), var(--accent-purple)); 
-                border-radius: 12px; 
+                border-radius: 14px; 
                 display: flex; align-items: center; justify-content: center; 
-                font-size: 1.4rem; color: white; 
-                margin-bottom: 1rem;
+                margin: 0 auto 1.2rem; 
+                font-size: 1.5rem;
             ">🎓</div>
-            <h4 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.3rem; font-weight: 700;">Faculty of Science (Pre-Engineering)</h4>
-            <div style="color: var(--accent-purple); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">GM Institute of International Sharjah, UAE</div>
-            <div style="color: var(--text-secondary); font-size: 0.85rem;">2024–2025</div>
+            <h4 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 700;">Faculty of Science (Pre-Engineering)</h4>
+            <div style="color: var(--accent-purple); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.8rem;">GM Institute of International</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 500;">Sharjah, UAE • 2024–2025</div>
         </div>
 
-        <!-- Diploma -->
+        <!-- Diploma IT -->
         <div class="glass-card education-card stagger-item reveal-up" style="
-            padding: 2rem 1.5rem; 
+            padding: 2.2rem 1.8rem; 
             text-align: center; 
-            height: 220px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center;
+            min-height: 200px;
         ">
             <div class="edu-icon" style="
-                width: 50px; height: 50px; 
+                width: 55px; height: 55px; 
                 background: linear-gradient(135deg, var(--primary-purple), var(--accent-purple)); 
-                border-radius: 12px; 
+                border-radius: 14px; 
                 display: flex; align-items: center; justify-content: center; 
-                font-size: 1.4rem; color: white; 
-                margin-bottom: 1rem;
+                margin: 0 auto 1.2rem; 
+                font-size: 1.5rem;
             ">🎓</div>
-            <h4 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.3rem; font-weight: 700;">Diploma in Information Technology</h4>
-            <div style="color: var(--accent-purple); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">Diraction Training Institute, Dubai</div>
-            <div style="color: var(--text-secondary); font-size: 0.85rem;">2025–2026</div>
+            <h4 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 700;">Diploma in Information Technology</h4>
+            <div style="color: var(--accent-purple); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.8rem;">Diraction Training Institute</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 500;">Dubai • 2025–2026</div>
         </div>
 
         <!-- Shopify Course -->
         <div class="glass-card education-card stagger-item reveal-up" style="
-            padding: 2rem 1.5rem; 
+            padding: 2.2rem 1.8rem; 
             text-align: center; 
-            height: 220px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center;
+            min-height: 200px;
         ">
             <div class="edu-icon" style="
-                width: 50px; height: 50px; 
+                width: 55px; height: 55px; 
                 background: linear-gradient(135deg, #10B981, #059669); 
-                border-radius: 12px; 
+                border-radius: 14px; 
                 display: flex; align-items: center; justify-content: center; 
-                font-size: 1.4rem; color: white; 
-                margin-bottom: 1rem;
+                margin: 0 auto 1.2rem; 
+                font-size: 1.5rem;
             ">🛍️</div>
-            <h4 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.3rem; font-weight: 700;">Shopify & Web Designing </h4>
-            <div style="color: #10B981; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">Short Course</div>
-            <div style="color: var(--text-secondary); font-size: 0.85rem;">2024</div>
+            <h4 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 700;">Shopify & Web Designing</h4>
+            <div style="color: #10B981; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.8rem;">Short Course</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 500;">2024</div>
         </div>
 
     </div>
 </section>
-
-   <!-- Professional Contact Section - 4 Column Perfect -->
-<div class="contact-info reveal-up" style="
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 2rem; 
-    justify-items: center; 
-    max-width: 1400px; 
-    margin: 0 auto 5rem;
-    padding: 0 2rem;
-">
-    
-    <!-- 1. WhatsApp -->
-    <div class="contact-item reveal-left" style="
-        background: rgba(16,185,129,0.12); 
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(16,185,129,0.25);
-        padding: 2.2rem 1.5rem; 
-        border-radius: 24px; 
-        height: 140px; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        position: relative;
-        overflow: hidden;
-    ">
-        <div class="contact-icon" style="
-            width: 60px; height: 60px; 
-            background: linear-gradient(135deg, #10B981, #059669); 
-            border-radius: 16px; 
-            display: flex; align-items: center; justify-content: center; 
-            margin-bottom: 1.2rem; 
-            font-size: 1.5rem; 
-            box-shadow: 0 10px 30px rgba(16,185,129,0.4);
-            transition: all 0.3s ease;
-        ">
-            <i class="fab fa-whatsapp"></i>
-        </div>
-        <a href="https://wa.me/971508916412?text=Hi%20Mustajab%2C%20I%20saw%20your%20portfolio..." target="_blank" style="
-            text-decoration: none; 
-            color: var(--text-primary); 
-            font-weight: 700; 
-            font-size: 1rem; 
-            line-height: 1.3; 
-            text-align: center;
-            transition: all 0.3s ease;
-        " title="Start WhatsApp Chat">+971 50 891 6412</a>
-    </div>
-
-    <!-- 2. Email -->
-    <div class="contact-item reveal-left" style="
-        background: rgba(79,70,229,0.12); 
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(79,70,229,0.25);
-        padding: 2.2rem 1.5rem; 
-        border-radius: 24px; 
-        height: 140px; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        position: relative;
-        overflow: hidden;
-    ">
-        <div class="contact-icon" style="
-            width: 60px; height: 60px; 
-            background: linear-gradient(135deg, var(--primary-purple), var(--accent-purple)); 
-            border-radius: 16px; 
-            display: flex; align-items: center; justify-content: center; 
-            margin-bottom: 1.2rem; 
-            font-size: 1.5rem; 
-            box-shadow: 0 10px 30px rgba(79,70,229,0.4);
-            transition: all 0.3s ease;
-        ">
-            <i class="fas fa-envelope"></i>
-        </div>
-        <a href="mailto:ahmadmustajab43@gmail.com?subject=Portfolio%20Inquiry" style="
-            text-decoration: none; 
-            color: var(--text-primary); 
-            font-weight: 600; 
-            font-size: 0.92rem; 
-            line-height: 1.3; 
-            text-align: center; 
-            word-break: break-word;
-            max-width: 100%;
-            transition: all 0.3s ease;
-        " title="ahmadmustajab43@gmail.com">ahmadmustajab43@gmail.com</a>
-    </div>
-
-    <!-- 3. Location -->
-    <div class="contact-item reveal-right" style="
-        background: rgba(107,114,128,0.12); 
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(107,114,128,0.25);
-        padding: 2.2rem 1.5rem; 
-        border-radius: 24px; 
-        height: 140px; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        position: relative;
-        overflow: hidden;
-    ">
-        <div class="contact-icon" style="
-            width: 60px; height: 60px; 
-            background: linear-gradient(135deg, #6B7280, #4B5563); 
-            border-radius: 16px; 
-            display: flex; align-items: center; justify-content: center; 
-            margin-bottom: 1.2rem; 
-            font-size: 1.5rem; 
-            box-shadow: 0 10px 30px rgba(107,114,128,0.4);
-            transition: all 0.3s ease;
-        ">
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <div style="
-            font-weight: 700; 
-            font-size: 1rem; 
-            line-height: 1.3; 
-            text-align: center; 
-            color: var(--text-primary);
-            letter-spacing: 0.3px;
-        ">Ajman UAE <br><span style='font-size: 0.9rem; font-weight: 500;'></span></div>
-    </div>
-
-    <!-- 4. LinkedIn -->
-    <div class="contact-item reveal-right" style="
-        background: rgba(37,99,235,0.12); 
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(37,99,235,0.25);
-        padding: 2.2rem 1.5rem; 
-        border-radius: 24px; 
-        height: 140px; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        position: relative;
-        overflow: hidden;
-    ">
-        <div class="contact-icon" style="
-            width: 60px; height: 60px; 
-            background: linear-gradient(135deg, #2563eb, #1d4ed8); 
-            border-radius: 16px; 
-            display: flex; align-items: center; justify-content: center; 
-            margin-bottom: 1.2rem; 
-            font-size: 1.5rem; 
-            box-shadow: 0 10px 30px rgba(37,99,235,0.4);
-            transition: all 0.3s ease;
-        ">
-            <i class="fab fa-linkedin-in"></i>
-        </div>
-        <a href="https://linkedin.com/in/mustajab-ahmed" target="_blank" style="
-            text-decoration: none; 
-            color: var(--text-primary); 
-            font-weight: 700; 
-            font-size: 1rem; 
-            line-height: 1.3; 
-            text-align: center; 
-            display: block;
-            letter-spacing: 0.3px;
-            transition: all 0.3s ease;
-        " title="LinkedIn Profile">LinkedIn</a>
-    </div>
-
-</div>
-    
-
-</div>
-
-            <div class="glass-card reveal-up" style="padding: 4rem 3rem; text-align: center;">
-                <form id="contactForm">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                    </div>
-                    <input type="text" placeholder="Subject" style="margin-bottom: 2rem;">
-                    <textarea rows="6" placeholder="Tell me about your project… UAE Employment Visa valid until 2028" required></textarea>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer>
     <div class="social-links reveal-up" style="gap: 1.8rem;">
         <!-- WhatsApp -->
@@ -1739,6 +1544,35 @@
         margin-top: 2.5rem; 
         text-align: center;
         line-height: 1.6;
+    ">
+       
+</footer>
+
+   
+</div>
+    
+
+</div>
+
+            <div class="glass-card reveal-up" style="padding: 4rem 3rem; text-align: center;">
+                <form id="contactForm">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <input type="text" placeholder="Subject" style="margin-bottom: 2rem;">
+                    <textarea rows="6" placeholder="Tell me about your project… UAE Employment Visa valid until 2028" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    
     ">
         © 2026 Mustajab Ahmed. All rights reserved. 
         <i class="fas fa-heart" style="color: var(--accent-purple); margin: 0 0.3rem;"></i>
